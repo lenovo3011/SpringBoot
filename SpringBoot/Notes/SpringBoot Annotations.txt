@@ -1,0 +1,35 @@
+1) @SpringBootApplication = @EnableAutoConfiguration + @ComponentScan + @Configuration  
+
+2) @Configuration --> If we defined this annotation before a method it means that the method contains such methods that will return Spring bean objects.
+
+3) @Bean --> It will use under @Configuration annotation to get the object bean.
+
+4) Autowired --> It will look for this object type given to variable. If it is available then it will automatically injects it else it will throws an error.
+
+5) @Component --> This annotation will save one step from Bean. If we define this annotation above the class then it not require to add Bean annotation and initiate the object and return it. The package will automatically return it to the variable if it is autowired. 
+
+6) @ComponentScan --> When we use component then the java files from other packages are not scanning and not available for use. Hence the componentscan annotation can be use to scan all java files from anywhere. It should mention under @Configuration . For eg @ComponentScan(basePackages= {"ComponentScan"})
+
+7) @Controller --> Tells Spring to treat the class as a handler for HTTP web requests. Used to define web controller class 
+
+8) @Service	--> It tells the Spring container that the class holds business logic and should be managed as a Spring bean.
+
+9) @Repository --> a component that directly interacts with the database or other data sources.
+
+10) @Qualifier -- > It is like a watchman of the gate. When the bean annotation gives a bean of object, if it doesn't have object specifies or the two beans are created for the same object then it will throw an error. To avoid this qualifier is user. When there are two objects we should specify the name of id infront of bean annotation for eg @Bean ("name") . Now in the main class user @Qualifier annotation like @Qualifier("name") then spring will don't confuse in between the two object of same type. But it will create two object but display only which is specifies in Qualifier. 
+
+11) @Lazy --> As we discussed in @Qualifier annotation that the object is created other than specified in qualifier annotation which is unnecessary. To avoid this @Lazt annotation can be used in above the object we don't wanna use.
+
+12) @ResponseBody
+
+13) @RequestBody
+
+14) @RestController
+
+15) @PathVariable
+
+	@RequestParam("email" ) String email 
+
+	<input name = "email"/>
+
+
