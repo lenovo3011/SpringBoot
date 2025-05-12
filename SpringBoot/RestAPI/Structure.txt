@@ -1,0 +1,9 @@
+Main Class
+
+Controller	 @ Controller
+
+Course //Main logic variable of course and getter setter 
+
+Interface 	// Methods 
+
+Implementation of interface @service --> Adding course details  and making list
