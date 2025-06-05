@@ -1,0 +1,86 @@
+h1 {
+   text-align: center;
+   font-size: 300%;     
+   color: yellow;
+   background-color:red;
+   border: 4px solid black;
+}
+
+
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        
+        
+    }
+
+
+    form {
+        max-width: 500px;
+        margin: auto;
+       background-color: #649cd4;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        display: block;
+        margin-bottom: 6px;
+        color: #333;
+        text-align: start;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ff0000;
+        border-radius: 6px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"],
+    button {
+        background-color: #4CAF50;
+        color: rgb(245, 245, 245);
+        padding: 12px 20px;
+        margin: 5px;
+        width: fit-content;
+          font-weight:bolder ;
+        border: 2px, solid, #04ff0d ;
+        border-radius: 8px;
+        cursor: pointer;
+        width: 100%;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover,
+    button:hover {
+        background-color: #45a049;
+    }
+
+
+    .back button {
+         background-color: #4CAF50;
+        color: rgb(245, 245, 245);
+        padding: 12px 20px;
+        margin: 5px;
+        width: fit-content;
+        border: 2px, solid, #0080ff;
+        font-weight:bolder ;
+        cursor: pointer;
+        width: 36.85%;
+        
+        transition: background-color 0.3s ease;
+    }
+
+    .back button :hover , button:hover{
+        background-color: #45a049;
+    }
+    
+

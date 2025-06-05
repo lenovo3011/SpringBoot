@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html xlms:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel = "stylesheet" href = "/home.css" >
+</head>
+<body>
+
+    <h1> Welcome to Student Management System ! </h1>
+    <div class = "btn">
+     <button th:onclick = "|window.location.href= '@{/allstudents}'|"> View all Students</button>
+
+	 
+	 <button th:onclick = "|window.location.href= '@{/addstudent}'|"> Add Student Info</button>   
+    <!-- <a th:href = "@{/allstudents}"> <button> View all Students </button> </a>
+   <a th:href = "@{/addstudents}"> <button> Add Student Info </button> </a> -->
+   </div>
+
+    
+</body>
+</html>

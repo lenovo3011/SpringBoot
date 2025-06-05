@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Student Data</title>
+    <link rel="stylesheet" href="liststudent.css"> <!-- or th:href="@{/css/style.css}" -->
+</head>
+<body>
+	
+<h1>List of Student Info</h1>
+
+
+<div class="grid-container"> <script src = "JavaScript/liststudent.js" > </script>
+    <div class="card" th:each="student : ${students}">
+        <p class="key">Roll No.:</p>
+        <p class="value" th:text="${student.rollno}">Roll No</p>
+
+        <p class="key">Name of Student:</p>
+        <p class="value" th:text="${student.name}">Student Name</p>
+
+        <p class="key">Phone No.:</p>
+        <p class="value" th:text="${student.phone}">Phone</p>
+
+        <p class="key">Gender:</p>
+        <p class="value" th:text="${student.sex}">Gender</p>
+
+        <p class="key">State:</p>
+        <p class="value" th:text="${student.state}">State</p>
+		<div class = "inlinebutton">
+		<button th:onclick = "|window.location.href = '@{/update/{id}(id=${student.rollno})}'|"  > Edit </button>
+		<button class="delete-btn" th:attr="data-rollno=${student.rollno}">Delete</button>
+
+
+ 
+		</div>
+    </div>
+</div>
+
+<button onclick="window.location.href='/'">Back to HomePage</button>
+
+
+</body>
+</html>
